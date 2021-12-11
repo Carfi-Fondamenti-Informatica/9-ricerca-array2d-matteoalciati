@@ -4,9 +4,9 @@ using namespace std;
 
 #include "lib.h"
 
-
 int main() {
     int k=0;
+    char u;
 
 
     char nome[1][20];
@@ -17,8 +17,9 @@ int main() {
         cin >> listanomi[i];
 
     }
-    
-     for (int i=0; i<10; i++){
+
+
+    for (int i=0; i<10; i++){
         for (int j=0; j<20;j++){
             listanomi[i][j];
             if (listanomi[i][j] >= 65 && listanomi[i][j] <= 90){
@@ -30,7 +31,7 @@ int main() {
 
 
     cin >> nome[0];
-   
+
     for (int j=0; j<20;j++) {
         listanomi[0][j];
         if (nome[0][j] >= 65 && nome[0][j] <= 90) {
@@ -40,10 +41,10 @@ int main() {
 
     
 
-if (funzione (nome, listanomi, k) == true){
-    cout << k;
-} else {
-    cout << "non presente";
-}
+    if (funzione (nome, listanomi, k) == true){
+        cout << k;
+    } else {
+        cout << "non presente";
+    }
     return 0;
 }
