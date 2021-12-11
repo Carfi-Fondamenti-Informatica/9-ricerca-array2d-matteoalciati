@@ -5,7 +5,7 @@ bool funzione (char nome[1][20],char listanomi [10][20], int &k){
     for (int i=0; i<10; i++){
         char a=0;
         char b=0;
-        for (int j=0; j<20 and a==b ; j++){
+        for (int j=0; j<20 and (a==b or a==b+32 or a+32==b or a+32==b+32) ; j++){
             a=listanomi[i][j];
             b=nome[0][j];
             h=j;
@@ -20,4 +20,3 @@ bool funzione (char nome[1][20],char listanomi [10][20], int &k){
 
     return false;
 
-}
