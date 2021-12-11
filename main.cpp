@@ -18,7 +18,10 @@ int main() {
 
     }
 
-  cin >> nome[0];
+
+    cin >> nome[0];
+
+    
 
 if (funzione (nome, listanomi, k) == true){
     cout << k;
