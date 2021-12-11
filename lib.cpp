@@ -1,23 +1,12 @@
 #include "lib.h"
+#include <cstring>
 
-bool funzione (char nome[1][20],char listanomi [10][20], int &k){
-    int h=0;
+bool funzione (char listanomi[10][20],char nome[1][20], int &k ){
     for (int i=0; i<10; i++){
-        char a=0;
-        char b=0;
-        for (int j=0; j<20 and a==b ; j++){
-            a=listanomi[i][j];
-            b=nome[0][j];
-            h=j;
-            if (a==0 or h==19){
-                k=i;
-                return true;
-            }
-
+        if (strcmp(listanomi[i], nome[0])==0){
+            k=i+1;
+            return true;
         }
-
     }
-
     return false;
-
 }
