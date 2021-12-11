@@ -4,6 +4,7 @@ using namespace std;
 
 #include "lib.h"
 
+
 int main() {
     int k=0;
     char u;
@@ -39,7 +40,7 @@ int main() {
         }
     }
 
-    
+
 
     if (funzione (nome, listanomi, k) == true){
         cout << k;
